@@ -8,4 +8,4 @@ con.sql("CREATE TABLE IF NOT EXISTS nba_history_v2.main.season_summary ( elo_rat
 
 con.sql("INSERT OR IGNORE INTO nba_history_v2.main.season_summary (SELECT * FROM 'data/data_catalog/season_summar*.parquet')")
 
-print("Data Loaded to Motherduck!")
+print("Data Loaded to Motherduck!.............")
