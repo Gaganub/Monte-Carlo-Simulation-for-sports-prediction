@@ -6,8 +6,8 @@
 </script>
 
 <EvidenceDefaultLayout {data} 
-	xProfile="https://www.x.com/Gaganub"
-	blueskyProfile="https://bsky.app/profile/Gaganub"
+	xProfile="https://www.x.com/GaganBiradar"
+	blueskyProfile="https://bsky.app/profile/GaganBiradar"
 	githubRepo="https://www.github.com/Gaganub/nba-monte-carlo"
 	title="mdsinabox"
 	builtWithEvidence=true>
