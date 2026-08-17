@@ -14,6 +14,6 @@
 
     let current = Math.round((min + max) / 2);
 	$: $inputs[name] = current;
-</script>
+</script> 
 
 <input type="range" bind:value={current} {min} {max} />
