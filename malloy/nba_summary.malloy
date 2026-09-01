@@ -30,4 +30,11 @@ source: season_results is duckdb.table('reg_season_end.parquet') extend {
             aggregate: row_count is count()
         }
     } -> {
-   
+    group_by: wins_ is 
+        floor(data.wins / bin_size) * nullif(bin_size, 0) + bin_size / 2
+    aggregate: win_count is data.row_count.sum()
+    order_by: wins_
+    }
+}
+ 
+run: season_results extend { where: winning_team = 'DEN' } -> by_wins
